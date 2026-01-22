@@ -79,14 +79,111 @@
     }
 
     /* MAPAS */
-    iframe {
-      width: 70%;
-      height: 300px;
-      border: 0;
-      border-radius: 30px;
-      margin-top: 20px;
-      background: #e3f2fd; /* solo para que se vea el espacio */
+    .nube-container {
+  position: relative;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+
+
+.img {
+  width: 55px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* izquierda pegado a la nube */
+.izquierda {
+  left: -25px;
+  top: 8px;
+}
+
+/* derecha pegado a la nube */
+.derecha {
+  right: -25px;
+  top: 8px;
+}
+
+/* arriba tocando la nube */
+.arriba {
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+  .columns {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
     }
+.header-img {
+     
+    position: relative;
+    margin-top: -25px;   /* 🔥 ESTE es el punto medio */
+    text-align: center;
+    z-index: 5;
+  }
+
+
+
+
+.header-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+  .card {
+    max-width: 520px;
+    margin-top: 130px;   /* mueve el contenido al centro del cuadro beige */
+    padding: 12px;
+  
+  }
+
+  h1 {
+    font-size: 16px;
+     color: #0d09f096;
+  }
+.cloud {
+  position: relative;
+  width: 140px;
+  height: 60px;
+  background: #90caf9;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0d47a1;
+  z-index: 1;
+}
+
+
+  .whatsapp {
+    font-size: 14px;
+    padding: 12px;
+    width: 90%;
+  }
+
+
+.video-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 20px;
+}
+
+.video-container video {
+  width: 170px;        /* 🔒 tamaño fijo */
+  max-width: 90%;
+  height: auto;
+  border-radius: 18px;
+  background: black;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
 
     /* WHATSAPP */
     .whatsapp {
