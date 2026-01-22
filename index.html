@@ -114,6 +114,31 @@
     display: inline-block;
   }
 
+.nube-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.img {
+  width: 60px; /* tamaño del muñequito */
+  position: absolute;
+}
+
+/* Posiciones */
+.izquierda {
+  left: -70px;
+}
+
+.derecha {
+  right: -70px;
+}
+
+.arriba {
+  top: -60px;
+}
 
   .columns {
       display: flex;
@@ -167,8 +192,15 @@
     <h1>🎉Este episodio de bluey se llama !el cumpleaños de dylan y bautizo¡ 🎉</h1>
 
     <!-- NUBE -->
-
+<<div class="nube-container">
+    <img src="izquierda.png" class="decor izquierda">
+    <img src="arriba.png" class="decor arriba">
+    
     <div class="cloud">21 de febrero</div>
+
+    <img src="derecha.png" class="decor derecha">
+  </div>
+
     <button class="music-btn" onclick="document.getElementById('cancion').play()">
     🎵 Apriétame
   </button>
