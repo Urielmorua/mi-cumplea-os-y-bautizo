@@ -45,6 +45,18 @@
       font-weight: bold;
       color: #0d47a1;
     }
+    .music-btn {
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none; /* oculto por defecto */
+}
+
 
     /* COLUMNAS */
     .columns {
@@ -98,6 +110,10 @@
     background-size: 125%;
     background-position: center top;
   }
+  .music-btn {
+    display: inline-block;
+  }
+
 
   .columns {
       display: flex;
@@ -151,8 +167,17 @@
     <h1>🎉Este episodio de bluey se llama !el cumpleaños de dylan y bautizo¡ 🎉</h1>
 
     <!-- NUBE -->
-    <div class="cloud">21 de febrero</div>
 
+    <div class="cloud">21 de febrero</div>
+    <button class="music-btn" onclick="document.getElementById('cancion').play()">
+    🎵 Apriétame
+  </button>
+
+</div>
+
+<audio id="cancion">
+  <source src="cancion.mpeg" type="audio/mpeg">
+</audio>
     <!-- COLUMNAS -->
     <div class="columns">
 
