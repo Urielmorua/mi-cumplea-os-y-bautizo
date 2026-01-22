@@ -114,30 +114,34 @@
     display: inline-block;
   }
 
-  .nube-container {
+.nube-container {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   margin: 20px 0;
 }
 
 .img {
-  width: 60px; /* tamaño del muñequito */
+  width: 60px;
   position: absolute;
 }
 
-/* Posiciones */
+/* Izquierda */
 .izquierda {
-  left: -80px;
+  left: -90px;
+  top: 20px;
 }
 
+/* Derecha */
 .derecha {
   right: -90px;
+  top: 20px;
 }
 
+/* Arriba */
 .arriba {
   top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
