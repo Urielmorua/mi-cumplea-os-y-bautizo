@@ -154,11 +154,12 @@
       align-items: flex-start;
     }
 .header-img {
-  top: -10px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
+    position: relative;
+    margin-top: -70px;   /* aquí sí se nota */
+    z-index: 5;
+  }
+
+
 
 .header-img img {
   width: 110px;
@@ -168,7 +169,7 @@
 
   .card {
     max-width: 520px;
-    margin-top: 170px;   /* mueve el contenido al centro del cuadro beige */
+    margin-top: 110px;   /* mueve el contenido al centro del cuadro beige */
     padding: 12px;
   
   }
