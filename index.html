@@ -154,7 +154,7 @@
       align-items: flex-start;
     }
 .header-img {
-  top: -10;
+  top: -10px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -200,12 +200,13 @@
 }
 
 .video-container {
-  max-width: 300px;  
-  margin: 50px auto 20px;  /* ← esto crea más separación arriba */
+  width: 85%;              /* ahora depende del ancho de la card */
+  max-width: 280px;        /* más pequeño real */
+  margin: 40px auto 20px;  /* separado del botón y centrado */
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
   background: black;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 .video-container video {
