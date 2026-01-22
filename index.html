@@ -123,30 +123,29 @@
 
 
 .img {
-  width: 50px;
+  width: 55px;
   position: absolute;
-  z-index: 2; /* asegura que queden encima de la nube */
+  z-index: 2;
 }
 
-/* izquierda sobre la nube */
+/* izquierda pegado a la nube */
 .izquierda {
-  left: -15px;
-  top: -5px;
+  left: -25px;
+  top: 8px;
 }
 
-/* derecha sobre la nube */
+/* derecha pegado a la nube */
 .derecha {
-  right: -15px;
-  top: -5px;
+  right: -25px;
+  top: 8px;
 }
 
-/* arriba encima centrado */
+/* arriba tocando la nube */
 .arriba {
-  top: -35px;
+  top: -30px;
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 
   .columns {
@@ -164,8 +163,8 @@
   h1 {
     font-size: 16px;
   }
-
-  .cloud {
+.cloud {
+  position: relative;
   width: 140px;
   height: 60px;
   background: #90caf9;
@@ -175,10 +174,8 @@
   justify-content: center;
   font-weight: bold;
   color: #0d47a1;
-  position: relative;
   z-index: 1;
 }
-
   iframe {
      width: 100%;
   height: 180px;
@@ -209,13 +206,13 @@
 
     <!-- NUBE -->
 
-    <div class="cloud">21 de febrero</div>
     <div class="nube-container">
-         <img src="izquierda.png" class="img izquierda">
+  <img src="izquierda.png" class="img izquierda">
   <img src="arriba.png" class="img arriba">
-  
   <img src="derecha.png" class="img derecha">
-    </div>
+
+  <div class="cloud">21 de febrero</div>
+</div>
     
     <button class="music-btn" onclick="document.getElementById('cancion').play()">
     🎵 Apriétame
