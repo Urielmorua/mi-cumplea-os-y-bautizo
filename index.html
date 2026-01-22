@@ -204,6 +204,21 @@
   }
 }
 
+.video-container {
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+.video-container video {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
 
 
   </style>
@@ -274,6 +289,13 @@
        target="_blank">
       📲 Confirmar asistencia por WhatsApp
     </a>
+
+    <div class="video-container">
+  <video controls>
+    <source src="dylan.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+</div>
 
   </div>
 
