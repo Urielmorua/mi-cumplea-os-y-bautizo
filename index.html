@@ -122,27 +122,27 @@
 
 
 
-/* muñequitos */
 .img {
   width: 50px;
   position: absolute;
+  z-index: 2; /* asegura que queden encima de la nube */
 }
 
-/* izquierda pegado a la nube */
+/* izquierda sobre la nube */
 .izquierda {
-  left: -45px;
-  top: 10px;
+  left: -15px;
+  top: -5px;
 }
 
-/* derecha pegado a la nube */
+/* derecha sobre la nube */
 .derecha {
-  right: -45px;
-  top: 10px;
+  right: -15px;
+  top: -5px;
 }
 
-/* arriba centrado */
+/* arriba encima centrado */
 .arriba {
-  top: -40px;
+  top: -35px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -175,6 +175,8 @@
   justify-content: center;
   font-weight: bold;
   color: #0d47a1;
+  position: relative;
+  z-index: 1;
 }
 
   iframe {
