@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-   body {
+/* =====================
+   BASE (CELULAR Y PC)
+===================== */
+
+body {
   margin: 0;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -14,38 +18,53 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
-  background-attachment: scroll;
 }
 
+/* Imagen superior */
+.header-img {
+  text-align: center;
+  margin-top: -25px;
+}
 
-    .card {
-      max-width: 900px;
-      margin: auto;
-      border-radius: 25px;
-      padding: 25px;
-    }
+.header-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
 
-    h1 {
-      text-align: center;
-      color: #1e88e5;
-      margin-bottom: 10px;
-    }
+/* Card */
+.card {
+  max-width: 520px;
+  margin: 130px auto 0;
+  padding: 14px;
+  border-radius: 25px;
+}
 
-    /* NUBE */
-    .cloud {
-      width: 140px;
-      height: 100px;
-      background: #90caf9;
-      border-radius: 50px;
-      margin: 30px auto 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      font-weight: bold;
-      color: #0d47a1;
-    }
-    .music-btn {
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 16px;
+  color: #0d09f096;
+  margin-bottom: 10px;
+}
+
+/* Nube */
+.cloud {
+  width: 140px;
+  height: 60px;
+  background: #90caf9;
+  border-radius: 30px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+/* Botón música */
+.music-btn {
+  display: inline-block;
   background: #1e88e5;
   color: white;
   border: none;
@@ -54,169 +73,92 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  display: none; /* oculto por defecto */
 }
 
-
-    /* COLUMNAS */
-    .columns {
-      display: flex;
-      gap: 20px;
-    }
-
-    .column {
-      flex: 1;
-      text-align: center;
-    }
-
-    h2 {
-      color: #1565c0;
-      margin-bottom: 8px;
-    }
-
-    p {
-      margin: 4px 0;
-    }
-
-    /* MAPAS */
-    iframe {
-      width: 70%;
-      height: 300px;
-      border: 0;
-      border-radius: 30px;
-      margin-top: 20px;
-      background: #e3f2fd; /* solo para que se vea el espacio */
-    }
-
-    /* WHATSAPP */
-    .whatsapp {
-      display: block;
-      margin: 35px auto 10px;
-      max-width: 340px;
-      background: #ebeeec;
-      color: rgb(3, 3, 3);
-      text-align: center;
-      padding: 16px;
-      border-radius: 30px;
-      font-size: 16px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    /* RESPONSIVE */
-@media (max-width: 768px) {
-
-  body {
-    background-size: 125%;
-    background-position: center top;
-  }
-  .music-btn {
-    display: inline-block;
-  }
-
-.nube-container {
-  position: relative;
-  width: fit-content;
-  margin: 20px auto;
-}
-
-
-
-.img {
-  width: 55px;
-  position: absolute;
-  z-index: 2;
-}
-
-/* izquierda pegado a la nube */
-.izquierda {
-  left: -25px;
-  top: 8px;
-}
-
-/* derecha pegado a la nube */
-.derecha {
-  right: -25px;
-  top: 8px;
-}
-
-/* arriba tocando la nube */
-.arriba {
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-  .columns {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-    }
-.header-img {
-     
-    position: relative;
-    margin-top: -25px;   /* 🔥 ESTE es el punto medio */
-    text-align: center;
-    z-index: 5;
-  }
-
-
-
-
-.header-img img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-}
-
-  .card {
-    max-width: 520px;
-    margin-top: 130px;   /* mueve el contenido al centro del cuadro beige */
-    padding: 12px;
-  
-  }
-
-  h1 {
-    font-size: 16px;
-     color: #0d09f096;
-  }
-.cloud {
-  position: relative;
-  width: 140px;
-  height: 60px;
-  background: #90caf9;
-  border-radius: 30px;
+/* Columnas (SIEMPRE como celular) */
+.columns {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.column {
+  text-align: center;
+}
+
+h2 {
+  color: #1565c0;
+}
+
+p {
+  margin: 4px 0;
+}
+
+/* WhatsApp */
+.whatsapp {
+  margin: 30px auto 10px;
+  width: 90%;
+  max-width: 340px;
+  background: #ebeeec;
+  color: #000;
+  text-align: center;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 14px;
   font-weight: bold;
-  color: #0d47a1;
-  z-index: 1;
+  text-decoration: none;
 }
 
-
-  .whatsapp {
-    font-size: 14px;
-    padding: 12px;
-    width: 90%;
-  }
-}
-
+/* Video */
 .video-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 30px auto 20px;
+  margin: 25px auto 20px;
 }
 
 .video-container video {
-  width: 170px;        /* 🔒 tamaño fijo */
-  max-width: 90%;
+  width: 180px;
   height: auto;
   border-radius: 18px;
   background: black;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   PANTALLAS GRANDES
+===================== */
+
+@media (min-width: 769px) {
+
+  .header-img img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .card {
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: #1e88e5;
+  }
+
+  .cloud {
+    width: 180px;
+    height: 80px;
+    font-size: 18px;
+  }
+
+  .video-container video {
+    width: 240px;
+  }
+
+  .whatsapp {
+    font-size: 16px;
+  }
 }
 
 
