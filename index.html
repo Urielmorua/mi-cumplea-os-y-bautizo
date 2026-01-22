@@ -155,17 +155,19 @@
     }
 .header-img {
   position: fixed;
-  top: 20px;
+  top: 5px;              /* más arriba */
   width: 100%;
-  text-align: center;
-  z-index: 0;
+  text-align: center;     /* centrado horizontal */
+  z-index: 1;
 }
 
 .header-img img {
-  width: 180px;
-  height: 180px;
+  width: 130px;          /* más pequeño */
+  height: 130px;         /* igual para que siga siendo círculo */
   border-radius: 50%;
   object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
   .card {
