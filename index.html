@@ -154,9 +154,22 @@
       align-items: flex-start;
     }
 
+    .header-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.header-img img {
+  width: 100%;
+  display: block;
+}
+
   .card {
     max-width: 520px;
-    margin-top: 155px;   /* mueve el contenido al centro del cuadro beige */
+    margin-top: 160px;   /* mueve el contenido al centro del cuadro beige */
     padding: 12px;
   }
 
@@ -194,6 +207,10 @@
 <body>
 
   <div class="card">
+
+    <div class="header-img">
+  <img src="dylan.PNG" alt="">
+</div>
 
     <!-- TITULO -->
     <h1>🎉Este episodio de bluey se llama !el cumpleaños de dylan y bautizo¡ 🎉</h1>
