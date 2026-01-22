@@ -155,20 +155,21 @@
     }
 .header-img {
   position: fixed;
-  top: 5px;              /* más arriba */
-  width: 100%;
-  text-align: center;     /* centrado horizontal */
+  top: 0px;              
+  left: 50%;             /* centro horizontal real */
+  transform: translateX(-50%);
   z-index: 1;
 }
 
 .header-img img {
-  width: 130px;          /* más pequeño */
-  height: 130px;         /* igual para que siga siendo círculo */
+  width: 110px;          /* más pequeño */
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
 
   .card {
     max-width: 520px;
